@@ -333,6 +333,7 @@ Class | Method | HTTP request | Description
  - [Model.ModelsDeviceOutputFullSIP](docs/ModelsDeviceOutputFullSIP.md)
  - [Model.ModelsFamily](docs/ModelsFamily.md)
  - [Model.ModelsGenerateConfigFileRequest](docs/ModelsGenerateConfigFileRequest.md)
+ - [Model.ModelsLineKeyProcessedTempData](docs/ModelsLineKeyProcessedTempData.md)
  - [Model.ModelsModel](docs/ModelsModel.md)
  - [Model.ModelsMusicOnHold](docs/ModelsMusicOnHold.md)
  - [Model.ModelsTemplate](docs/ModelsTemplate.md)

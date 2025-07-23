@@ -7163,6 +7163,10 @@ components:
           type: string
         https_username:
           type: string
+        line_keys:
+          items:
+            $ref: '#/components/schemas/models.LineKeyProcessedTempData'
+          type: array
         mac_address:
           type: string
         realm:
@@ -7473,6 +7477,17 @@ components:
       - parameters
       - template_file_id
       - template_id
+      type: object
+    models.LineKeyProcessedTempData:
+      properties:
+        label:
+          type: string
+        line:
+          type: integer
+        type:
+          type: string
+        value:
+          type: string
       type: object
     models.Model:
       example:

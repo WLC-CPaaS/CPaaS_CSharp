@@ -39,18 +39,20 @@ namespace Org.OpenAPITools.Model
         /// <param name="httpsHost">httpsHost.</param>
         /// <param name="httpsPassword">httpsPassword.</param>
         /// <param name="httpsUsername">httpsUsername.</param>
+        /// <param name="lineKeys">lineKeys.</param>
         /// <param name="macAddress">macAddress.</param>
         /// <param name="realm">realm.</param>
         /// <param name="sipPassword">sipPassword.</param>
         /// <param name="sipUsername">sipUsername.</param>
         /// <param name="timezone">timezone.</param>
         /// <param name="voicemailBoxNumber">voicemailBoxNumber.</param>
-        public ModelsConfigFileParameter(string extension = default, string httpsHost = default, string httpsPassword = default, string httpsUsername = default, string macAddress = default, string realm = default, string sipPassword = default, string sipUsername = default, string timezone = default, string voicemailBoxNumber = default)
+        public ModelsConfigFileParameter(string extension = default, string httpsHost = default, string httpsPassword = default, string httpsUsername = default, List<ModelsLineKeyProcessedTempData> lineKeys = default, string macAddress = default, string realm = default, string sipPassword = default, string sipUsername = default, string timezone = default, string voicemailBoxNumber = default)
         {
             this.Extension = extension;
             this.HttpsHost = httpsHost;
             this.HttpsPassword = httpsPassword;
             this.HttpsUsername = httpsUsername;
+            this.LineKeys = lineKeys;
             this.MacAddress = macAddress;
             this.Realm = realm;
             this.SipPassword = sipPassword;
@@ -82,6 +84,12 @@ namespace Org.OpenAPITools.Model
         /// </summary>
         [DataMember(Name = "https_username", EmitDefaultValue = false)]
         public string HttpsUsername { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LineKeys
+        /// </summary>
+        [DataMember(Name = "line_keys", EmitDefaultValue = false)]
+        public List<ModelsLineKeyProcessedTempData> LineKeys { get; set; }
 
         /// <summary>
         /// Gets or Sets MacAddress
@@ -131,6 +139,7 @@ namespace Org.OpenAPITools.Model
             sb.Append("  HttpsHost: ").Append(HttpsHost).Append("\n");
             sb.Append("  HttpsPassword: ").Append(HttpsPassword).Append("\n");
             sb.Append("  HttpsUsername: ").Append(HttpsUsername).Append("\n");
+            sb.Append("  LineKeys: ").Append(LineKeys).Append("\n");
             sb.Append("  MacAddress: ").Append(MacAddress).Append("\n");
             sb.Append("  Realm: ").Append(Realm).Append("\n");
             sb.Append("  SipPassword: ").Append(SipPassword).Append("\n");

@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **HttpsHost** | **string** |  | [optional] 
 **HttpsPassword** | **string** |  | [optional] 
 **HttpsUsername** | **string** |  | [optional] 
+**LineKeys** | [**List&lt;ModelsLineKeyProcessedTempData&gt;**](ModelsLineKeyProcessedTempData.md) |  | [optional] 
 **MacAddress** | **string** |  | [optional] 
 **Realm** | **string** |  | [optional] 
 **SipPassword** | **string** |  | [optional] 
