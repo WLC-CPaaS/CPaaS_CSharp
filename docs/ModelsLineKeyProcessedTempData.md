@@ -5,7 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Label** | **string** |  | [optional] 
-**Line** | **int** |  | [optional] 
 **Type** | **string** |  | [optional] 
 **Value** | **string** |  | [optional] 
 

@@ -214,7 +214,6 @@ docs/ServiceFeatureCode.md
 docs/ServiceGroupOutputFull.md
 docs/ServiceGroupOutputShort.md
 docs/ServiceImpersonateUserOutputFull.md
-docs/ServiceImpersonatedUserInfo.md
 docs/ServiceMediaOutputFull.md
 docs/ServiceMediaOutputShort.md
 docs/ServiceMetaflowOutput.md
@@ -239,7 +238,6 @@ docs/ServiceSystemStatusCPAASService.md
 docs/ServiceSystemStatusMessagingService.md
 docs/ServiceSystemStatusOutput.md
 docs/ServiceSystemStatusSupportService.md
-docs/ServiceSystemStatusVOIPService.md
 docs/ServiceTTS.md
 docs/ServiceTemporalRuleOutputFull.md
 docs/ServiceTemporalRuleOutputShort.md
@@ -293,7 +291,6 @@ docs/VoIPUserApi.md
 docs/VoicemailApi.md
 docs/WebhookApi.md
 git_push.sh
-src/Org.OpenAPITools.Test/Model/ModelsLineKeyProcessedTempDataTests.cs
 src/Org.OpenAPITools.Test/Org.OpenAPITools.Test.csproj
 src/Org.OpenAPITools/Api/AccountApi.cs
 src/Org.OpenAPITools/Api/CPaaSManagementApi.cs
@@ -530,7 +527,6 @@ src/Org.OpenAPITools/Model/ServiceFeatureCode.cs
 src/Org.OpenAPITools/Model/ServiceGroupOutputFull.cs
 src/Org.OpenAPITools/Model/ServiceGroupOutputShort.cs
 src/Org.OpenAPITools/Model/ServiceImpersonateUserOutputFull.cs
-src/Org.OpenAPITools/Model/ServiceImpersonatedUserInfo.cs
 src/Org.OpenAPITools/Model/ServiceMediaOutputFull.cs
 src/Org.OpenAPITools/Model/ServiceMediaOutputShort.cs
 src/Org.OpenAPITools/Model/ServiceMetaflowOutput.cs
@@ -555,7 +551,6 @@ src/Org.OpenAPITools/Model/ServiceSystemStatusCPAASService.cs
 src/Org.OpenAPITools/Model/ServiceSystemStatusMessagingService.cs
 src/Org.OpenAPITools/Model/ServiceSystemStatusOutput.cs
 src/Org.OpenAPITools/Model/ServiceSystemStatusSupportService.cs
-src/Org.OpenAPITools/Model/ServiceSystemStatusVOIPService.cs
 src/Org.OpenAPITools/Model/ServiceTTS.cs
 src/Org.OpenAPITools/Model/ServiceTemporalRuleOutputFull.cs
 src/Org.OpenAPITools/Model/ServiceTemporalRuleOutputShort.cs

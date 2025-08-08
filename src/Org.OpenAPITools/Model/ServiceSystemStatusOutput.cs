@@ -38,13 +38,11 @@ namespace Org.OpenAPITools.Model
         /// <param name="cpaasServices">cpaasServices.</param>
         /// <param name="messagingServices">messagingServices.</param>
         /// <param name="supportServices">supportServices.</param>
-        /// <param name="voipServices">voipServices.</param>
-        public ServiceSystemStatusOutput(ServiceSystemStatusCPAASService cpaasServices = default, ServiceSystemStatusMessagingService messagingServices = default, ServiceSystemStatusSupportService supportServices = default, ServiceSystemStatusVOIPService voipServices = default)
+        public ServiceSystemStatusOutput(ServiceSystemStatusCPAASService cpaasServices = default, ServiceSystemStatusMessagingService messagingServices = default, ServiceSystemStatusSupportService supportServices = default)
         {
             this.CpaasServices = cpaasServices;
             this.MessagingServices = messagingServices;
             this.SupportServices = supportServices;
-            this.VoipServices = voipServices;
         }
 
         /// <summary>
@@ -66,12 +64,6 @@ namespace Org.OpenAPITools.Model
         public ServiceSystemStatusSupportService SupportServices { get; set; }
 
         /// <summary>
-        /// Gets or Sets VoipServices
-        /// </summary>
-        [DataMember(Name = "voip_services", EmitDefaultValue = false)]
-        public ServiceSystemStatusVOIPService VoipServices { get; set; }
-
-        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -82,7 +74,6 @@ namespace Org.OpenAPITools.Model
             sb.Append("  CpaasServices: ").Append(CpaasServices).Append("\n");
             sb.Append("  MessagingServices: ").Append(MessagingServices).Append("\n");
             sb.Append("  SupportServices: ").Append(SupportServices).Append("\n");
-            sb.Append("  VoipServices: ").Append(VoipServices).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

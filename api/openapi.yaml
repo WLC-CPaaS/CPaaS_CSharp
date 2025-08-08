@@ -7482,8 +7482,6 @@ components:
       properties:
         label:
           type: string
-        line:
-          type: integer
         type:
           type: string
         value:
@@ -10796,21 +10794,7 @@ components:
       example:
         status_code: 0
         data:
-          cluster_id: cluster_id
-          account_id: account_id
-          user_info:
-            full_name: full_name
-            has_avatar: true
-            priv_level: priv_level
-            last_name: last_name
-            first_name: first_name
-            email: email
-          owner_id: owner_id
-          account_name: account_name
           auth_token: auth_token
-          is_master_account: true
-          is_reseller: true
-          reseller_id: reseller_id
         request_id: request_id
       properties:
         data:
@@ -11250,13 +11234,6 @@ components:
           support_services:
             e911_server: e911_server
             phone_number_server: phone_number_server
-          voip_services:
-            call_manager: call_manager
-            message_broker: message_broker
-            sip_proxy: sip_proxy
-            backend: backend
-            media_server: media_server
-            apps: apps
           messaging_services:
             messaging_server: messaging_server
         system_status: system_status
@@ -12374,61 +12351,9 @@ components:
       type: object
     service.ImpersonateUserOutputFull:
       example:
-        cluster_id: cluster_id
-        account_id: account_id
-        user_info:
-          full_name: full_name
-          has_avatar: true
-          priv_level: priv_level
-          last_name: last_name
-          first_name: first_name
-          email: email
-        owner_id: owner_id
-        account_name: account_name
         auth_token: auth_token
-        is_master_account: true
-        is_reseller: true
-        reseller_id: reseller_id
       properties:
-        account_id:
-          type: string
-        account_name:
-          type: string
         auth_token:
-          type: string
-        cluster_id:
-          type: string
-        is_master_account:
-          type: boolean
-        is_reseller:
-          type: boolean
-        owner_id:
-          type: string
-        reseller_id:
-          type: string
-        user_info:
-          $ref: '#/components/schemas/service.ImpersonatedUserInfo'
-      type: object
-    service.ImpersonatedUserInfo:
-      example:
-        full_name: full_name
-        has_avatar: true
-        priv_level: priv_level
-        last_name: last_name
-        first_name: first_name
-        email: email
-      properties:
-        email:
-          type: string
-        first_name:
-          type: string
-        full_name:
-          type: string
-        has_avatar:
-          type: boolean
-        last_name:
-          type: string
-        priv_level:
           type: string
       type: object
     service.MediaOutputFull:
@@ -13263,13 +13188,6 @@ components:
         support_services:
           e911_server: e911_server
           phone_number_server: phone_number_server
-        voip_services:
-          call_manager: call_manager
-          message_broker: message_broker
-          sip_proxy: sip_proxy
-          backend: backend
-          media_server: media_server
-          apps: apps
         messaging_services:
           messaging_server: messaging_server
       properties:
@@ -13279,8 +13197,6 @@ components:
           $ref: '#/components/schemas/service.SystemStatusMessagingService'
         support_services:
           $ref: '#/components/schemas/service.SystemStatusSupportService'
-        voip_services:
-          $ref: '#/components/schemas/service.SystemStatusVOIPService'
       type: object
     service.SystemStatusSupportService:
       example:
@@ -13290,28 +13206,6 @@ components:
         e911_server:
           type: string
         phone_number_server:
-          type: string
-      type: object
-    service.SystemStatusVOIPService:
-      example:
-        call_manager: call_manager
-        message_broker: message_broker
-        sip_proxy: sip_proxy
-        backend: backend
-        media_server: media_server
-        apps: apps
-      properties:
-        apps:
-          type: string
-        backend:
-          type: string
-        call_manager:
-          type: string
-        media_server:
-          type: string
-        message_broker:
-          type: string
-        sip_proxy:
           type: string
       type: object
     service.TTS:

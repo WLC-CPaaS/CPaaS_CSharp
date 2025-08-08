@@ -36,13 +36,11 @@ namespace Org.OpenAPITools.Model
         /// Initializes a new instance of the <see cref="ModelsLineKeyProcessedTempData" /> class.
         /// </summary>
         /// <param name="label">label.</param>
-        /// <param name="line">line.</param>
         /// <param name="type">type.</param>
         /// <param name="value">value.</param>
-        public ModelsLineKeyProcessedTempData(string label = default, int line = default, string type = default, string value = default)
+        public ModelsLineKeyProcessedTempData(string label = default, string type = default, string value = default)
         {
             this.Label = label;
-            this.Line = line;
             this.Type = type;
             this.Value = value;
         }
@@ -52,12 +50,6 @@ namespace Org.OpenAPITools.Model
         /// </summary>
         [DataMember(Name = "label", EmitDefaultValue = false)]
         public string Label { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Line
-        /// </summary>
-        [DataMember(Name = "line", EmitDefaultValue = false)]
-        public int Line { get; set; }
 
         /// <summary>
         /// Gets or Sets Type
@@ -80,7 +72,6 @@ namespace Org.OpenAPITools.Model
             StringBuilder sb = new StringBuilder();
             sb.Append("class ModelsLineKeyProcessedTempData {\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
-            sb.Append("  Line: ").Append(Line).Append("\n");
             sb.Append("  Type: ").Append(Type).Append("\n");
             sb.Append("  Value: ").Append(Value).Append("\n");
             sb.Append("}\n");
